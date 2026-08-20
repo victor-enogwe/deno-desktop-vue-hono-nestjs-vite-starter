@@ -1,0 +1,72 @@
+{
+  "version": "0.0.0",
+  "description": "Desktop app",
+  "tasks": {
+    "build": "vite build --app --mode production",
+    "dev": "deno desktop --node-modules-dir=manual -P --hmr framework-server.ts",
+    "dev:inspect": "deno desktop --node-modules-dir=manual --inspect -P --hmr framework-server.ts",
+    "compile": {
+      "dependencies": [
+        "build"
+      ],
+      "command": "deno desktop -P --include dist/client dist/server/server.mjs"
+    }
+  },
+  "exclude": [
+    "dist/*"
+  ],
+  "imports": {
+    "@desktop/": "./src/",
+    "@tests/": "./tests/",
+    "@example/config": "workspace:*",
+    "@example/logger": "workspace:*",
+    "@example/schemas": "workspace:*",
+    "@deno/vite-plugin": "npm:@deno/vite-plugin@^2.0.3",
+    "@hono/node-server": "npm:@hono/node-server@^2.1.1",
+    "@nestjs/common": "npm:@nestjs/common@^11.1.19",
+    "@nestjs/config": "npm:@nestjs/config@^4.0.4",
+    "@nestjs/core": "npm:@nestjs/core@^11.1.19",
+    "@vitejs/plugin-vue": "npm:@vitejs/plugin-vue@^6.0.8",
+    "es-toolkit": "npm:es-toolkit@^1.50.0",
+    "hono": "npm:hono@^4.13.2",
+    "mrmime": "npm:mrmime@^2.0.1",
+    "vite": "npm:vite@^8.2.1",
+    "vue": "npm:vue@^3.5.41",
+    "zod": "npm:zod@^4.4.2"
+  },
+  "compilerOptions": {
+    "types": [
+      "vite/client"
+    ],
+    "lib": [
+      "dom",
+      "dom.asynciterable",
+      "dom.iterable",
+      "deno.desktop",
+      "deno.window",
+      "deno.ns"
+    ]
+  },
+  "permissions": {
+    "default": {
+      "env": true,
+      "ffi": true,
+      "read": true,
+      "run": true,
+      "sys": true,
+      "net": true,
+      "write": true
+    }
+  },
+  "desktop": {
+    "backend": "webview",
+    "app": {
+      "name": "Deno Desktop"
+    },
+    "output": {
+      "macos": "../../dist/example.app",
+      "windows": "../../dist/example.exe",
+      "linux": "../../dist/example"
+    }
+  }
+}

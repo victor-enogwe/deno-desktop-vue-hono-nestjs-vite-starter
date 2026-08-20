@@ -1,0 +1,17 @@
+{
+  "name": "@example/config",
+  "version": "0.0.0",
+  "description": "example config",
+  "exports": {
+    "./config": "./src/config.module.ts"
+  },
+  "tasks": {},
+  "imports": {
+    "@config/": "./src/",
+    "@tests/": "./tests/",
+    "@example/logger": "workspace:*",
+    "@example/schemas": "workspace:*",
+    "@nestjs/common": "npm:@nestjs/common@^11.1.19",
+    "@nestjs/config": "npm:@nestjs/config@^4.0.4"
+  }
+}

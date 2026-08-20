@@ -1,0 +1,57 @@
+{
+  "version": "0.0.0",
+  "description": "Starter Example Project - Deno Desktop With Vite, Vue, NestJS and a Hono Server",
+  "tasks": {
+    "desktop": "deno task --cwd=apps/desktop",
+    "test": "deno test --allow-sys --allow-env --allow-read --allow-ffi --coverage -P"
+  },
+  "workspace": [
+    "apps/*",
+    "packages/*"
+  ],
+  "exclude": [
+    "dist/*"
+  ],
+  "nodeModulesDir": "auto",
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.19",
+    "@std/testing": "jsr:@std/testing@^1.0.18",
+    "@types/node": "npm:@types/node@^26.2.0"
+  },
+  "unstable": [
+    "sloppy-imports",
+    "fmt-component",
+    "byonm",
+    "detect-cjs"
+  ],
+  "allowScripts": [
+    "npm:@nestjs/core",
+    "npm:fsevents@2.3.3"
+  ],
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true
+  },
+  "fmt": {
+    "lineWidth": 80,
+    "singleQuote": false,
+    "useTabs": false,
+    "indentWidth": 2,
+    "proseWrap": "preserve",
+    "semiColons": true
+  },
+  "lint": {
+    "report": "pretty",
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "exclude": [
+        "no-slow-types",
+        "verbatim-module-syntax"
+      ]
+    }
+  }
+}

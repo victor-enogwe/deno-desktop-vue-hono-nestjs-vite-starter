@@ -1,0 +1,17 @@
+{
+  "name": "@example/logger",
+  "version": "0.0.0",
+  "description": "Deno Vite Vue NestJS Honologger",
+  "exports": {
+    "./logger": "./src/logger.ts",
+    "./logger-module": "./src/logger.module.ts"
+  },
+  "tasks": {},
+  "imports": {
+    "@logger/": "./src/",
+    "@tests/": "./tests/",
+    "@example/enums": "workspace:*",
+    "@example/schemas": "workspace:*",
+    "@nestjs/common": "npm:@nestjs/common@^11.1.19"
+  }
+}

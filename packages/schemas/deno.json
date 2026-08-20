@@ -1,0 +1,17 @@
+{
+  "name": "@example/schemas",
+  "version": "0.0.0",
+  "description": "Zod schemas",
+  "exports": {
+    "./base-env": "./src/base-env.ts",
+    "./desktop-service": "./src/desktop-service.ts",
+    "./primitives": "./src/primitives.ts",
+    "./zod": "./src/zod.ts"
+  },
+  "imports": {
+    "@example/enums": "workspace:*",
+    "@schemas/": "./src/",
+    "@tests/": "./tests/",
+    "zod": "npm:zod@^4.4.2"
+  }
+}

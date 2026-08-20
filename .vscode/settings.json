@@ -1,0 +1,105 @@
+{
+  "breadcrumbs.enabled": true,
+  "cSpell.ignoreWords": [],
+  "cSpell.words": [
+    "asynciterable",
+    "byonm",
+    "mrmime",
+    "vite"
+  ],
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.internalInspect": true,
+  "deno.disablePaths": [
+    "dist",
+    "*.vue"
+  ],
+  "deno.unstable": [
+    "sloppy-imports"
+  ],
+  "editor.autoIndent": "full",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": true,
+  "editor.codeLens": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line",
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "editor.detectIndentation": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [
+    80
+  ],
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "deno.json": "LICENSE, README.md, .gitignore, .editorconfig, deno.lock, import_map.json, tailwind.config.ts, .env, .env.*, .dockerignore, .postcssrc.json, tsconfig*.json, .npmrc, package.json, package-lock.json, pnpm-lock.yaml, pnpm-workspace.yaml, ionic.config.json, nest-cli.json"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/dist": false,
+    "**/.pnpm-store": true,
+    "**/.turbo": true,
+    "pnpm-lock.yaml": true,
+    ".npmrc": true,
+    ".nvmrc": true,
+    ".gitattributes": true,
+    ".editorconfig": true,
+    ".gitignore": true,
+    "tsconfig*.tsbuildinfo": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "git.enableCommitSigning": true,
+  "git.enableSmartCommit": true,
+  "git.ignoreLimitWarning": true,
+  "[html]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "search.exclude": {
+    "**/coverage": true,
+    "**/dist": true,
+    "deno.lock": true
+  },
+  "workbench.colorTheme": "Better Material Theme Darker High Contrast",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.explorerKind": "external",
+  "js/ts.tsserver.experimental.enableProjectDiagnostics": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "terminal.integrated.env.osx": {
+    "NODE_ENV": "development",
+    "LOG_LEVEL": "debug",
+    "DENO_TRACE_PERMISSIONS": "1",
+    "DEBUG": ""
+  }
+}

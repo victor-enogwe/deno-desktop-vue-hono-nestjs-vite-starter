@@ -1,0 +1,13 @@
+{
+  "name": "@example/enums",
+  "version": "0.0.0",
+  "description": "Deno Vite Vue NestJS Honoenums",
+  "exports": {
+    "./env": "./src/env.ts",
+    "./logger": "./src/logger.ts"
+  },
+  "imports": {
+    "@enums/": "./src/",
+    "@tests/": "./tests/"
+  }
+}

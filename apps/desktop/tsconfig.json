@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowArbitraryExtensions": true,
+    "paths": {
+      "@desktop/*": [
+        "./src/*"
+      ]
+    }
+  }
+}
